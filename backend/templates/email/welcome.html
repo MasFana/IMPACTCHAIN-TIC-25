@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ImpactChain</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8fafc;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #1e293b, #475569);
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo::before {
+            content: "💝";
+            font-size: 24px;
+        }
+        h1 {
+            color: #1e293b;
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .subtitle {
+            color: #64748b;
+            font-size: 16px;
+            margin: 10px 0 0 0;
+        }
+        .content {
+            margin: 30px 0;
+        }
+        .greeting {
+            font-size: 18px;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #1e293b, #475569);
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .features {
+            background: #f1f5f9;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 30px 0;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+        }
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            font-size: 18px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 14px;
+        }
+        .social-links {
+            margin: 20px 0;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #64748b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"></div>
+            <h1>Welcome to ImpactChain!</h1>
+            <p class="subtitle">Platform Blockchain untuk Dampak Sosial</p>
+        </div>
+
+        <div class="content">
+            <p class="greeting">Halo {{name}}! 👋</p>
+            
+            <p>Selamat datang di ImpactChain! Kami sangat senang Anda bergabung dengan komunitas kami yang peduli terhadap dampak sosial positif.</p>
+            
+            <p>Untuk memulai perjalanan Anda, silakan verifikasi email Anda dengan mengklik tombol di bawah ini:</p>
+            
+            <div style="text-align: center;">
+                <a href="{{verificationUrl}}" class="cta-button">Verifikasi Email Saya</a>
+            </div>
+            
+            <div class="features">
+                <h3 style="margin-top: 0; color: #1e293b;">Apa yang bisa Anda lakukan di ImpactChain:</h3>
+                
+                <div class="feature">
+                    <span class="feature-icon">💝</span>
+                    <span><strong>Donasi Transparan:</strong> Berdonasi dengan transparansi blockchain penuh</span>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">🎯</span>
+                    <span><strong>Misi Gamifikasi:</strong> Selesaikan misi dan dapatkan poin reward</span>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">🏢</span>
+                    <span><strong>Dukung UMKM:</strong> Bantu usaha kecil menengah berkembang</span>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">🏆</span>
+                    <span><strong>Leaderboard:</strong> Kompetisi sehat untuk dampak yang lebih besar</span>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">🪙</span>
+                    <span><strong>Token Reward:</strong> Dapatkan token ICT untuk setiap kontribusi</span>
+                </div>
+            </div>
+            
+            <p>Setelah verifikasi, Anda akan mendapatkan <strong>50 poin bonus</strong> untuk memulai perjalanan Anda!</p>
+            
+            <p>Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi tim support kami di <a href="mailto:{{supportEmail}}">{{supportEmail}}</a></p>
+        </div>
+
+        <div class="footer">
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            
+            <p>© 2024 ImpactChain. All rights reserved.</p>
+            <p>Platform Blockchain untuk Dampak Sosial Indonesia</p>
+            
+            <p style="font-size: 12px; margin-top: 20px;">
+                Email ini dikirim ke {{email}}. Jika Anda tidak mendaftar di ImpactChain, 
+                silakan abaikan email ini.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
