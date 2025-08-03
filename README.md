@@ -157,4 +157,4 @@ ImpactChain was developed by Team Tiara for the Web Development Competition:
 
 - Bashrc - Team Leader/Fullstack Dev
 - Fana - Designer/Developer 
-- Skylumie - System Analyst 
+- Skylumie - System Analyst/Developer
